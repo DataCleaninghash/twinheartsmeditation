@@ -713,6 +713,13 @@ a:hover { color: var(--ink); }
 }
 .footer-phones a:hover { color: #fff; }
 
+.footer-affiliate {
+  margin: 0.65rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgba(255, 248, 250, 0.72);
+}
+
 .footer-map {
   display: grid;
   gap: 0.65rem;
