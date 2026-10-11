@@ -1,4 +1,4 @@
-# Arahant Meditation Centre — website
+# Arahant Pranic Healing Centre — website
 
 A single-page static website. No build step, no dependencies, no `npm install`.
 Files: `index.html`, `styles.css`.
