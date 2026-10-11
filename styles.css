@@ -384,6 +384,9 @@ a:hover { color: var(--ink); }
   border: 1px solid rgba(201, 135, 156, 0.45);
   border-radius: 999px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  font: inherit;
+  cursor: pointer;
+  width: 100%;
   transition:
     transform 0.25s var(--ease),
     background 0.25s var(--ease),
@@ -442,6 +445,68 @@ a:hover { color: var(--ink); }
   .watch-link {
     width: min(100%, 28rem);
   }
+}
+
+.video-modal {
+  padding: 0;
+  border: none;
+  border-radius: 1rem;
+  width: min(92vw, 52rem);
+  max-width: 52rem;
+  background: #1a1216;
+  color: #fff8fa;
+  box-shadow: 0 24px 64px rgba(40, 16, 28, 0.45);
+}
+
+.video-modal::backdrop {
+  background: rgba(40, 16, 28, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.video-modal-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-modal-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1rem 0.85rem 1.15rem;
+}
+
+.video-modal-bar h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 550;
+  color: #fff8fa;
+}
+
+.video-modal-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 248, 250, 0.12);
+  color: #fff8fa;
+  cursor: pointer;
+}
+
+.video-modal-close:hover {
+  background: rgba(255, 248, 250, 0.22);
+}
+
+.video-modal video {
+  display: block;
+  width: 100%;
+  max-height: min(70vh, 36rem);
+  background: #000;
+  border-radius: 0 0 1rem 1rem;
 }
 
 /* Centre / join block — centered after short copy */
